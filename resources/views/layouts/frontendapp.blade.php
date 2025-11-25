@@ -45,7 +45,7 @@
                     <div class="header-top-area">
                         <div class="header-top-left">
                             <!-- Header Logo -->
-                            <a href="index.html">
+                            <a href="/">
                                 <img src="{{asset('frontend/assets/images/DIGNIFIED HEALTH LTD OFFICIAL LOGO.png')}}" alt="logo" width="70" height="70">
                             </a>
                             <!-- Header Logo -->
@@ -332,7 +332,7 @@
                                         <img src="{{asset('frontend/assets/images/DIGNIFIED HEALTH LTD OFFICIAL LOGO.png')}}" alt="logo-light"  width="150"
                                             >
                                   
-                                    <p>DIGNIFIED HEALTHCARE LTD</p>
+                                    <p>DIGNIFIED HEALTH LTD</p>
                                     {{-- <div class="social-menu is-text-link-orange ">
                                         <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                                             <i class="fa-brands fa-facebook-f"></i>
