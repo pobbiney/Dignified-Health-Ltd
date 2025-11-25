@@ -60,5 +60,7 @@ Route::post('edit-staff-process/{id}',[BackendController::class,'editStaff'])->n
 
 /*Website Frontend */
 Route::get('/',[FrontendController::class,'gethomeView'])->name('home');
+Route::get('about-us',[FrontendController::class,'getAboutView'])->name('about-us');
+Route::get('our-services',[FrontendController::class,'getServiceView'])->name('our-services');
 
 /*End of Website Frontend */

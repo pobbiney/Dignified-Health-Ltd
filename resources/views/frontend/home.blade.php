@@ -54,122 +54,11 @@
 
         <!-- ...::: Section Client Slider Start :::... -->
         <!-- ...::: Section Location Start :::... -->
-        <div class="section-location">
-            <div class="container">
-                <ul class="location-area">
-                    <li class="location-item">
-                        <div class="icon">
-                            <img src="{{asset('frontend/assets/images/flag-round-1.png')}}" alt="flag-round-1" width="38" height="38">
-                        </div>
-                        <div class="content">
-                            <span>Location in England</span>
-                            <address class="d-h5">34 Cauldon Drive, Holme Hall, Chesterfield, S40 4UB, United Kingdom</address>
-                        </div>
-                    </li>
-                    <li class="location-item">
-                        <div class="icon">
-                            <img src="{{asset('frontend/assets/images/help-desk (1).png')}}" alt="flag-round-2" width="38" height="38">
-                        </div>
-                        <div class="content">
-                            <span>24/7 Support</span>
-                            <address class="d-h5">07403234317</address>
-                        </div>
-                    </li>
-                    <li class="location-item">
-                        <div class="icon">
-                            <img src="{{asset('frontend/assets/images/mail.png')}}" alt="flag-round-3" width="38" height="38">
-                        </div>
-                        <div class="content">
-                            <span>Send as a message</span>
-                            <address class="d-h5">info@dignifiedhealthcare.com</address>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        
         <!-- ...::: Section Client Slider End :::... -->
 
         <!-- ...::: Section About Start :::... -->
-        <section class="section-about">
-            <div class="position-relative section-space">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center gy-5 flex-column-reverse flex-lg-row">
-                        <div class="col-lg-5 col-xxl-6">
-                            <div class="about-left-block">
-                                <div class="image-block animate-bottom-to-top">
-                                    <img src="{{asset('frontend/assets/images/ChatGPT Image Nov 22, 2025, 09_59_00 AM.png')}}" alt="about-img-1" width="439" height="538"
-                                        class="img-fluid animate-bottom-to-top" data-animation-duration="1"
-                                        data-animation-delay="0.5">
-                                </div>
-                                <div class="image-block">
-                                    <img src="{{asset('frontend/assets/images/6593.jpg_wh860.jpg')}}" alt="about-img-1" width="375" height="359"
-                                        class="img-fluid animate-left-to-right" data-animation-duration="1"
-                                        data-animation-delay="1">
-                                </div>
-                                <img src="{{asset('frontend/assets/images/abstract/dot-1.svg')}}" alt="dot-1" width="198" height="93"
-                                    class="img-fluid animate-top-to-bottom" data-animation-duration="1">
-                                <div class="about-shape-block animate-zoom-in" data-animation-duration="1"
-                                    data-animation-delay="0.5">
-                                    <div class="about-shape-inner-block">
-                                        <img src="{{asset('frontend/assets/images/abstract/star-curve-shape-blue.svg')}}"
-                                            alt="star-curve-shape-blue" width="200" height="200" class="img-fluid">
-                                        <div class="about-shape-text">
-                                            <span>2+</span>
-                                            Our Experience
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-7 col-xxl-5">
-                            <div class="about-right-block">
-                                <div class="about-content">
-                                    <div class="section-content-block">
-                                        <span class="section-tag">Compassionate, Professional Care Staffing You Can Trust</span>
-                                        <h2 class="section-title is-text-dark">About <strong>DIGNIFIED</strong>
-                                            Healthcare</h2>
-                                        <p class="section-text">Dignified Health Limited (DHL Care Services) is a specialist recruitment and staffing agency dedicated to providing high-quality, reliable, and compassionate care professionals to health and social care providers across the United Kingdom..</p>
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        
-                                        
-
-                                        <div class="d-flex align-items-center flex-wrap gap-4 gap-lg-5 mt-5">
-                                            <a href="contact.html" class="btn btn-secondary">
-                                               Read more
-                                                <div class="btn-icon">
-                                                    <span>
-                                                        <i class="fa-regular fa-arrow-right"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-regular fa-arrow-right"></i>
-                                                    </span>
-                                                </div>
-                                            </a>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Section Images -->
-                <div class="about-section-img">
-                    {{-- <img src="{{asset('frontend/assets/images/about-section-img-1.png')}}" alt="about-section-img" width="278" height="168"
-                        class="animate-left-to-right" data-animation-duration="1.5"> --}}
-                    <img src="{{asset('frontend/assets/images/about-section-abstract-img-1.svg')}}" alt="about-section-abstract-img-1"
-                        width="211" height="375" class="animate-zoom-in" data-animation-duration="1.5">
-                    <img src="{{asset('frontend/assets/images/about-section-abstract-img-2.svg')}}" alt="about-section-abstract-img-2"
-                        width="332" height="480" class="animate-zoom-in" data-animation-duration="1.5">
-                    <img src="{{asset('frontend/assets/images/about-section-abstract-img-3.svg')}}" alt="about-section-abstract-img-3"
-                        width="226" height="115" class="animate-zoom-in" data-animation-duration="1.5">
-                </div>
-                <!-- Section Images -->
-            </div>
-        </section>
+        @include('frontend.company-details')
         <!-- ...::: Section About End :::... -->
 
         <!-- ...::: Section Service Start :::... -->
@@ -203,7 +92,7 @@ We offer four core services:
                                                 <div class="swiper-slide">
                                                     <div class="service-item">
                                                         <div class="service-image-block">
-                                                            <a href="service-details.html" class="service-image-link">
+                                                            <a href="our-services" class="service-image-link">
                                                                 <img src="{{asset('frontend/assets/images/istockphoto-523695992-612x612.jpg')}}"
                                                                     alt="service-thumbnail-1" width="364" height="266"
                                                                     class="img-cover service-thumbnail">
@@ -216,13 +105,13 @@ We offer four core services:
                                                             </div>
                                                         </div>
                                                         <div class="service-content">
-                                                            <a href="service-details.html" class="service-link"> 
+                                                            <a href="our-services" class="service-link"> 
                                                                 Temporary & Emergency Cover</a>
                                                             <p class="service-summery">We are committed to providing the
                                                                 best
                                                                 services to ensure
                                                                 your success.</p>
-                                                            <a href="service-details.html"
+                                                            <a href="our-services"
                                                                 class="btn btn-secondary-outline">
                                                                 Read More
                                                                 <div class="btn-icon btn-icon-sm">
@@ -242,7 +131,7 @@ We offer four core services:
                                                 <div class="swiper-slide">
                                                     <div class="service-item">
                                                         <div class="service-image-block">
-                                                            <a href="service-details.html" class="service-image-link">
+                                                            <a href="our-services" class="service-image-link">
                                                                 <img src="{{asset('frontend/assets/images/we-are-hiring.png')}}"
                                                                     alt="service-thumbnail-1" width="364" height="266"
                                                                     class="img-cover service-thumbnail">
@@ -255,13 +144,13 @@ We offer four core services:
                                                             </div>
                                                         </div>
                                                         <div class="service-content">
-                                                            <a href="service-details.html" class="service-link"> 
+                                                            <a href="our-services" class="service-link"> 
                                                                 Permanent Recruitment</a>
                                                             <p class="service-summery">We are committed to providing the
                                                                 best
                                                                 services to
                                                                 ensure your success.</p>
-                                                            <a href="service-details.html"
+                                                            <a href="our-services"
                                                                 class="btn btn-secondary-outline">
                                                                 Read More
                                                                 <div class="btn-icon btn-icon-sm">
@@ -281,7 +170,7 @@ We offer four core services:
                                                 <div class="swiper-slide">
                                                     <div class="service-item">
                                                         <div class="service-image-block">
-                                                            <a href="service-details.html" class="service-image-link">
+                                                            <a href="our-services" class="service-image-link">
                                                                 <img src="{{asset('frontend/assets/images/istockphoto-1363774646-612x612.jpg')}}"
                                                                     alt="service-thumbnail-3" width="364" height="266"
                                                                     class="img-cover service-thumbnail">
@@ -294,11 +183,11 @@ We offer four core services:
                                                             </div>
                                                         </div>
                                                         <div class="service-content">
-                                                            <a href="service-details.html" class="service-link">Specialist Mental Health & Complex Care Staffing</a>
+                                                            <a href="our-services" class="service-link">Specialist Mental Health & Complex Care Staffing</a>
                                                             <p class="service-summery">We are committed to providing the
                                                                 best
                                                                 services  .</p>
-                                                            <a href="service-details.html"
+                                                            <a href="our-services"
                                                                 class="btn btn-secondary-outline">
                                                                 Read More
                                                                 <div class="btn-icon btn-icon-sm">
@@ -318,7 +207,7 @@ We offer four core services:
                                                 <div class="swiper-slide">
                                                     <div class="service-item">
                                                         <div class="service-image-block">
-                                                            <a href="service-details.html" class="service-image-link">
+                                                            <a href="our-services" class="service-image-link">
                                                                 <img src="{{asset('frontend/assets/images/istockphoto-1366428092-612x612.jpg')}}"
                                                                     alt="service-thumbnail-4" width="364" height="266"
                                                                     class="img-cover service-thumbnail">
@@ -331,12 +220,12 @@ We offer four core services:
                                                             </div>
                                                         </div>
                                                         <div class="service-content">
-                                                            <a href="service-details.html" class="service-link">Training & Continuous Professional Development (CPD)</a>
+                                                            <a href="our-services" class="service-link">Training & Continuous Professional Development (CPD)</a>
                                                             <p class="service-summery">We are committed to providing the
                                                                 best
                                                                 services to ensure
                                                                 your success.</p>
-                                                            <a href="service-details.html"
+                                                            <a href="our-services"
                                                                 class="btn btn-secondary-outline">
                                                                 Read More
                                                                 <div class="btn-icon btn-icon-sm">
@@ -653,80 +542,7 @@ We offer four core services:
         <!-- ...::: Section Work Process End :::... -->
 
         <!-- ...::: Section Team Start :::... -->
-        <section class="section-team ">
-            <div class="position-relative z-index-1">
-                <div class="section-space">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-10 col-xl-8 col-xxl-7">
-                                <div class="section-content-block text-center">
-                                    <span class="section-tag is-white">OUR MEMBER</span>
-                                    <h2 class="section-title is-text-dark">Explore Our Management Team</h2>
-                                    <p class="section-text col-lg-10 mx-auto">Get to know the experienced professionals guiding our organisation. Our management team is made up of industry leaders who bring together years of expertise, hands-on knowledge, and a shared commitment to excellence. Each member plays a vital role in shaping our vision, driving innovation, and ensuring that the highest standards of service are consistently delivered.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row gy-4 mt-4">
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="team-member-item team-member-item-style-1">
-                                    <a href="team-details.html" class="team-member-image-block">
-                                        <img src="{{asset('frontend/assets/images/team-member-img-1.jpg')}}" alt="team-member-img-1"
-                                            width="282" height="243" class="img-cover">
-                                    </a>
-                                    <div class="team-member-content-info">
-                                        <span class="team-member-designation">PRODUCT MANAGER</span>
-                                        <a href="team-details.html" class="team-member-name">Melisa Jonson</a>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="team-member-item team-member-item-style-1">
-                                    <a href="team-details.html" class="team-member-image-block">
-                                        <img src="{{asset('frontend/assets/images/team-member-img-2.jpg')}}" alt="team-member-img-2"
-                                            width="282" height="243" class="img-cover">
-                                    </a>
-                                    <div class="team-member-content-info">
-                                        <span class="team-member-designation">FLEET SUPERVISOR</span>
-                                        <a href="team-details.html" class="team-member-name">James Anderson</a>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="team-member-item team-member-item-style-1">
-                                    <a href="team-details.html" class="team-member-image-block">
-                                        <img src="{{asset('frontend/assets/images/team-member-img-3.jpg')}}" alt="team-member-img-3"
-                                            width="282" height="243" class="img-cover">
-                                    </a>
-                                    <div class="team-member-content-info">
-                                        <span class="team-member-designation">PRODUCT MANAGER</span>
-                                        <a href="team-details.html" class="team-member-name">Emily Davis</a>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                                <div class="team-member-item team-member-item-style-1">
-                                    <a href="team-details.html" class="team-member-image-block">
-                                        <img src="{{asset('frontend/assets/images/team-member-img-3.jpg')}}" alt="team-member-img-3"
-                                            width="282" height="243" class="img-cover">
-                                    </a>
-                                    <div class="team-member-content-info">
-                                        <span class="team-member-designation">PRODUCT MANAGER</span>
-                                        <a href="team-details.html" class="team-member-name">Emily Davis</a>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="team-bg-img"></div>
-            </div>
-        </section>
+        @include('frontend.team');
         <!-- ...::: Section Team End :::... -->
 
      
@@ -754,10 +570,13 @@ We offer four core services:
                                         <!-- Additional required wrapper -->
                                         <div class="swiper-wrapper">
                                             <!-- Slider Item -->
+                                            @foreach ($testimonial as $listall)
+                                                
+                                           
                                             <div class="swiper-slide">
                                                 <div class="testimonial-slider-item-1">
                                                     <div class="testimonial-avater">
-                                                        <img src="{{asset('frontend/assets/images/testimonial-avater-img-1.jpg')}}"
+                                                        <img src="{{$listall->photo}}"
                                                             alt="testimonial-avatar-1" width="191" height="191"
                                                             class="rounded-circle">
                                                     </div>
@@ -771,9 +590,7 @@ We offer four core services:
                                                         </div>
 
                                                         <blockquote class="testimonial-quote">
-                                                            I believe in lifelong learning and they are a great place to
-                                                            learn from
-                                                            experts. I have learned a lot and recommend it
+                                                          {{$listall->message}}
                                                         </blockquote>
 
                                                         <div
@@ -781,8 +598,8 @@ We offer four core services:
                                                             <div class="d-flex gap-3">
 
                                                                 <div class="content">
-                                                                    <h5 class="mb-1">William Jekson</h5>
-                                                                    <span>Product Manager</span>
+                                                                    <h5 class="mb-1">{{ $listall->name }}</h5>
+                                                                     
                                                                 </div>
                                                             </div>
                                                             <div class="icon">
@@ -795,49 +612,10 @@ We offer four core services:
 
                                                 </div>
                                             </div>
+                                             @endforeach
                                             <!-- Slider Item -->
                                             <!-- Slider Item -->
-                                            <div class="swiper-slide">
-                                                <div class="testimonial-slider-item-1">
-                                                    <div class="testimonial-avater">
-                                                        <img src="{{asset('frontend/assets/images/testimonial-avater-img-1.jpg')}}"
-                                                            alt="testimonial-avatar-1" width="191" height="191"
-                                                            class="rounded-circle">
-                                                    </div>
-                                                    <div class="">
-                                                        <div class="review-star">
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                        </div>
-
-                                                        <blockquote class="testimonial-quote">
-                                                            I believe in lifelong learning and they are a great place to
-                                                            learn from
-                                                            experts. I have learned a lot and recommend it
-                                                        </blockquote>
-
-                                                        <div
-                                                            class="d-flex justify-content-between gap-4 align-items-center">
-                                                            <div class="d-flex gap-3">
-
-                                                                <div class="content">
-                                                                    <h5 class="mb-1">William Jekson</h5>
-                                                                    <span>Product Manager</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="icon">
-                                                                <img src="{{asset('frontend/assets/images/icons/icon-orange-gradient-quote.svg')}}"
-                                                                    alt="icon-orange-gradient-quote" width="97"
-                                                                    height="97" class="d-none d-sm-inline-block">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
+                                           
                                             <!-- Slider Item -->
                                         </div>
                                     </div>
@@ -980,39 +758,7 @@ We offer four core services:
  
 
         <!-- ...::: Section Location Start :::... -->
-      <div class="section-location">
-            <div class="container">
-                <ul class="location-area">
-                    <li class="location-item">
-                        <div class="icon">
-                            <img src="{{asset('frontend/assets/images/flag-round-1.png')}}" alt="flag-round-1" width="38" height="38">
-                        </div>
-                        <div class="content">
-                            <span>Location in England</span>
-                            <address class="d-h5">34 Cauldon Drive, Holme Hall, Chesterfield, S40 4UB, United Kingdom</address>
-                        </div>
-                    </li>
-                    <li class="location-item">
-                        <div class="icon">
-                            <img src="{{asset('frontend/assets/images/help-desk (1).png')}}" alt="flag-round-2" width="38" height="38">
-                        </div>
-                        <div class="content">
-                            <span>24/7 Support</span>
-                            <address class="d-h5">+44 7882 907667</address>
-                        </div>
-                    </li>
-                    <li class="location-item">
-                        <div class="icon">
-                            <img src="{{asset('frontend/assets/images/mail.png')}}" alt="flag-round-3" width="38" height="38">
-                        </div>
-                        <div class="content">
-                            <span>Send as a message</span>
-                            <address class="d-h5">info@dignifiedhealthltd.com</address>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+       @include('frontend.company-details')
         <!-- ...::: Section Location End :::... -->
 @endsection
 

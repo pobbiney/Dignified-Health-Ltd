@@ -96,9 +96,7 @@
                                 <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-brands fa-x-twitter"></i>
                                 </a>
-                                <a href="https://www.dribbble.com/" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-dribbble"></i>
-                                </a>
+                               
                                 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
@@ -125,7 +123,7 @@
                                 </div>
                                 <div class="menu-info-content">
                                     <span class="menu-info-title">Call Us</span>
-                                    <a href="tel:: 07882 907667" class="menu-info-link">: 07882 907667</a>
+                                    <a href="tel:: +44 7882 907667" class="menu-info-link">: +44 7882 907667</a>
                                 </div>
                             </div>
                         </div>
@@ -135,19 +133,19 @@
                             <nav class="header-nav d-none d-lg-block">
                                 <ul class="header-nav-list">
                                     <li class="header-nav-item  ">
-                                        <a href="#" class="header-nav-link">
+                                        <a href="/" class="header-nav-link">
                                             Home
                                         </a>
                                     </li>
                                        
                                     <li class="header-nav-item  ">
-                                        <a href="#" class="header-nav-link">
+                                        <a href="about-us" class="header-nav-link">
                                            About us
                                         </a>
                                         
                                     </li>
                                     <li class="header-nav-item " >
-                                        <a href="#" class="header-nav-link">
+                                        <a href="our-services" class="header-nav-link">
                                            Our services
                                         </a>
                                         
@@ -223,80 +221,52 @@
         </div>
         <div class="offcanvas-body">
             <a href="index.html" class="d-flex justify-content-center mb-4">
-                <img src="assets/images/logo-dark.png" alt="logo" width="176" height="56" class="img-fluid">
+                <img src="{{asset('frontend/assets/images/DIGNIFIED HEALTH LTD OFFICIAL LOGO.png')}}" alt="logo" width="80" height="80" class="img-fluid">
             </a>
 
             <nav class="category-menu">
                 <ul>
-                    <li class="category">
-                        <a href="#">Demo</a>
-                        <ul class="subcategory">
-                            <li><a href="index.html">Home 1</a></li>
-                            <li><a href="index-2.html">Home 2</a></li>
-                            <li><a href="index-3.html">Home 3</a></li>
-                            <li><a href="index-4.html">Home 4</a></li>
-                            <li><a href="index-5.html">Home 5</a></li>
-                        </ul>
-                    </li>
-                    <li class="category">
-                        <a href="#">pages</a>
-                        <ul class="subcategory">
-                            <li>
-                                <a href="about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing</a>
-                            </li>
-                            <li>
-                                <a href="teams.html">Team</a>
-                            </li>
-                            <li>
-                                <a href="team-details.html">Team Details</a>
-                            </li>
-                            <li>
-                                <a href="faqs.html">FAQ’s</a>
-                            </li>
-                            <li>
-                                <a href="404.html">Error 404</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="category">
-                        <a href="#">Projects</a>
-                        <ul class="subcategory">
-                            <li>
-                                <a href="projects.html">Projects</a>
-                            </li>
-                            <li>
-                                <a href="project-details.html">Projects Details</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="category">
-                        <a href="#">Services</a>
-                        <ul class="subcategory">
-                            <li>
-                                <a href="services.html">Services</a>
-                            </li>
-                            <li>
-                                <a href="service-details.html">Service Details</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="category">
-                        <a href="#">News</a>
-                        <ul class="subcategory">
-                            <li>
-                                <a href="blogs.html">News</a>
-                            </li>
-                            <li>
-                                <a href="blog-details.html">News Details</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="category">
-                        <a href="contact.html">Contact Us</a>
-                    </li>
+                    
+                                    <li class="category">
+                                        <a href="/" >
+                                            Home
+                                        </a>
+                                    </li>
+                                       
+                                    <li class="category">
+                                        <a href="{{ route('about-us') }}"  >
+                                           About us
+                                        </a>
+                                        
+                                    </li>
+                                    <li class="category " >
+                                        <a href="our-services"  >
+                                           Our services
+                                        </a>
+                                        
+                                    </li>
+                                    <li class="category  " >
+                                        <a href="#"  >
+                                            For Employers
+                                        </a>
+                                        
+                                    </li>
+                                    <li class="category">
+                                        <a href="#"  >
+                                           For Staff
+                                        </a>
+                                        
+                                    </li>
+                                      <li class="category">
+                                        <a href="contact.html"  >
+                                            Resources
+                                        </a>
+                                    </li>
+                                    <li class="category">
+                                        <a href="contact.html"  >
+                                            Contact
+                                        </a>
+                                    </li>
                 </ul>
             </nav>
 
@@ -304,9 +274,7 @@
                 <a href="http://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="http://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-pinterest-p"></i>
-                </a>
+                
                 <a href="http://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
@@ -319,24 +287,7 @@
     <!-- ...::: Offcanvas Menu End:::... -->
 
     <!-- Offcanvas Search -->
-    <div class="offcanvas offcanvas-top" tabindex="-1" id="searchBar" aria-labelledby="searchBarLabel">
-        <div class="offcanvas-header">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-lg-8 mx-auto">
-                        <h5 class="offcanvas-title mb-2" id="searchBarLabel">Search by keyword</h5>
-                        <form action="#" method="get" class="position-relative">
-                            <input type="search" placeholder="Search here" class="form-input pe-5" required>
-                            <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <!-- Offcanvas Search -->
 
     <!-- Main Wrapper -->
@@ -403,10 +354,10 @@
                                     <h4 class="footer-title">Quick Links</h4>
                                     <nav class="footer-nav">
                                         <ul>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                            <li><a href="teams.html">Our Members</a></li>
-                                            <li><a href="services.html">Services</a></li>
+                                            <li><a href="about-us">About</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="about-us">Our Members</a></li>
+                                            <li><a href="our-services">Services</a></li>
                                             
                                         </ul>
                                     </nav>
@@ -417,10 +368,10 @@
                                     <h4 class="footer-title">Services</h4>
                                     <nav class="footer-nav">
                                         <ul>
-                                            <li><a href="service-details.html">Temporary & Emergency Cover</a></li>
-                                            <li><a href="service-details.html">Permanent Recruitment</a></li>
-                                            <li><a href="service-details.html">Specialist Mental Health & Complex Care Staffing</a></li>
-                                            <li><a href="service-details.html">Training & Continuous Professional Development (CPD)</a></li>
+                                            <li><a href="our-services">Temporary & Emergency Cover</a></li>
+                                            <li><a href="our-services">Permanent Recruitment</a></li>
+                                            <li><a href="our-services">Specialist Mental Health & Complex Care Staffing</a></li>
+                                            <li><a href="our-services">Training & Continuous Professional Development (CPD)</a></li>
                                          
                                         </ul>
                                     </nav>
