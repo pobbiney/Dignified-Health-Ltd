@@ -1,19 +1,23 @@
-name: DIGINIFIED Deployment
+name: FTP Deploy
 
-on: 'push'
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  web-deploy:
-    name: Deploy
+  ftp-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Get latest code
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Sync files to server
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: ${{ secrets.FTP_HOST }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-
-        
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./
+          server-dir: /public_html/
