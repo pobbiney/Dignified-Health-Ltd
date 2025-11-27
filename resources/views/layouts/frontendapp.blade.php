@@ -151,24 +151,24 @@
                                         
                                     </li>
                                     <li class="header-nav-item  " >
-                                        <a href="#" class="header-nav-link">
+                                        <a href="for-employers" class="header-nav-link">
                                             For Employers
                                         </a>
                                         
                                     </li>
                                     <li class="header-nav-item  ">
-                                        <a href="#" class="header-nav-link">
+                                        <a href="for-staff" class="header-nav-link">
                                            For Staff
                                         </a>
                                         
                                     </li>
                                       <li class="header-nav-item">
-                                        <a href="contact.html" class="header-nav-link">
+                                        <a href="resources" class="header-nav-link">
                                             Resources
                                         </a>
                                     </li>
                                     <li class="header-nav-item">
-                                        <a href="contact.html" class="header-nav-link">
+                                        <a href="contact-us" class="header-nav-link">
                                             Contact
                                         </a>
                                     </li>
@@ -176,15 +176,12 @@
                             </nav>
                             <!-- Header Menu -->
                             <div class="header-user-event">
-                                <button class="header-user-event-button header-user-event-button-cart">
-                                    <i class="fa-light fa-bag-shopping"></i>
-                                    <span class="product-number">2</span>
-                                </button>
+                               
                                 <button class="header-user-event-button header-user-event-button-search" type="button"
                                     data-bs-toggle="offcanvas" data-bs-target="#searchBar" aria-controls="searchBar">
                                     <i class="fa-light fa-search"></i>
                                 </button>
-                                <a href="contact.html" class="btn btn-primary d-none d-xl-flex">
+                                <a href="contact-us" class="btn btn-primary d-none d-xl-flex">
                                     Get In Touch
                                     <div class="btn-icon">
                                         <span>
@@ -246,24 +243,24 @@
                                         
                                     </li>
                                     <li class="category  " >
-                                        <a href="#"  >
+                                        <a href="for-employers"  >
                                             For Employers
                                         </a>
                                         
                                     </li>
                                     <li class="category">
-                                        <a href="#"  >
+                                        <a href="for-staff"  >
                                            For Staff
                                         </a>
                                         
                                     </li>
                                       <li class="category">
-                                        <a href="contact.html"  >
+                                        <a href="resources"  >
                                             Resources
                                         </a>
                                     </li>
                                     <li class="category">
-                                        <a href="contact.html"  >
+                                        <a href="contact-us"  >
                                             Contact
                                         </a>
                                     </li>
@@ -397,7 +394,7 @@
                                             <div class="content">
                                                 <span>Send Your Message</span>
                                                 <a href="mailto:info@dignifiedhealthltd.com"
-                                                    class="text-white">nfo@dignifiedhealthltd.com</a>
+                                                    class="text-white">info@dignifiedhealthltd.com</a>
                                             </div>
                                         </li>
                                     </ul>
@@ -411,7 +408,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-auto">
-                            <p class="copyright-text">&copy; 2025 DIGNIFIED HEALTHCARE LTD / All rights
+                            <p class="copyright-text">&copy; 2025 DIGNIFIED HEALTH LTD / All rights
                                 reserved / Developed By Speedlines Technology</p>
                         </div>
                     </div>

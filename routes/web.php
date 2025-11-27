@@ -56,11 +56,16 @@ Route::post('add-staff-process',[BackendController::class,'addStaff'])->name('ad
 Route::get('list-staff',[BackendController::class,'getStaffListView'])->name('list-staff');
 Route::get('edit-staff/{id}',[BackendController::class,'editStaffView'])->name('edit-staff');
 Route::post('edit-staff-process/{id}',[BackendController::class,'editStaff'])->name('edit-staff-process');
+Route::get('ViewMessages',[BackendController::class,'getViewMessagesView'])->name('ViewMessages');
 /* End of Website Management */
 
 /*Website Frontend */
 Route::get('/',[FrontendController::class,'gethomeView'])->name('home');
 Route::get('about-us',[FrontendController::class,'getAboutView'])->name('about-us');
 Route::get('our-services',[FrontendController::class,'getServiceView'])->name('our-services');
+Route::get('for-staff',[FrontendController::class,'getForStaffView'])->name('for-staff');
+Route::get('for-employers',[FrontendController::class,'getForEmployersView'])->name('for-employers');
+Route::get('contact-us',[FrontendController::class,'getContactView'])->name('contact-us');
+Route::post('contact-us-proccess',[FrontendController::class,'SendMessage'])->name('contact-us-proccess');
 
 /*End of Website Frontend */

@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Contact;
 use App\Models\Staff;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
+use Symfony\Component\Mime\Message;
 
 class BackendController extends Controller
 {
@@ -193,5 +195,12 @@ class BackendController extends Controller
         $insertCat->save();
 
        return $insertCat ? back()->with('message_success','Staff updated successfully') : back()->with('message_error','Something went wrong, please try again.');
+    }
+
+    public function getViewMessagesView()
+    {
+      $list = Contact::orderBy('id','DESC')->get();
+
+      return view('backend.ViewMessages',['list'=>$list]);
     }
 }

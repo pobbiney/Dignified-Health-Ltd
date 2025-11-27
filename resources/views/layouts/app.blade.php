@@ -99,7 +99,7 @@
         <nav>
             <div class="app-logo">
                 <a class="logo d-inline-block" href="index.html">
-                    <img alt="#" src="{{ asset('assets/images/logo/1.png')}}">
+                    <img alt="#" src="{{ asset('assets/images/logo/DIGNIFIED HEALTH LTD OFFICIAL LOGO.png')}}" width="80px">
                 </a>
 
                 <span class="bg-light-primary toggle-semi-nav d-flex-center">
@@ -113,7 +113,7 @@
                         </span>
                     <div class="flex-grow-1 ps-2">
                         <h6 class="text-primary mb-0"> {{auth()->user()->name}}</h6>
-                        <p class="text-muted f-s-12 mb-0">Web Developer</p>
+                        {{-- <p class="text-muted f-s-12 mb-0">Web Developer</p> --}}
                     </div>
 
 
@@ -128,7 +128,7 @@
                                     <i class="ph-duotone  ph-user-circle pe-1 f-s-20"></i> Profile Details
                                 </a>
                             </li>
-                            <li class="dropdown-item">
+                            {{-- <li class="dropdown-item">
                                 <a class="f-w-500" href="setting.html" target="_blank">
                                     <i class="ph-duotone  ph-gear pe-1 f-s-20"></i> Settings
                                 </a>
@@ -147,12 +147,12 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="dropdown-item">
+                            </li> --}}
+                            {{-- <li class="dropdown-item">
                                 <a class="mb-0 text-secondary f-w-500" href="sign_up.html" target="_blank">
                                     <i class="ph-bold  ph-plus pe-1 f-s-20"></i> Add account
                                 </a>
-                            </li>
+                            </li> --}}
 
                             <li class="app-divider-v dotted py-1"></li>
                             <form action="{{ route('logout-authentication-process') }}" method="POST">
@@ -255,7 +255,7 @@
                                 </ul>
                             </div>
 
-                        </li>
+                        {{-- </li>
 
                         <li class="header-apps">
                             <a aria-controls="appscanvasRights"
@@ -622,7 +622,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li> --}}
 
                         <li class="header-dark">
                             <div class="sun-logo head-icon bg-light-dark rounded-circle f-s-22 p-2">
@@ -632,7 +632,7 @@
                                 <i class="ph ph-sun-dim"></i>
                             </div>
                         </li>
-
+{{-- 
                         <li class="header-notification">
                             <a aria-controls="notificationcanvasRight"
                                class="d-block head-icon position-relative bg-light-dark rounded-circle f-s-22 p-2"
@@ -762,7 +762,7 @@
                                 </div>
                             </div>
 
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
             </div>

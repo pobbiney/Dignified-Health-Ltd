@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Contact;
 use App\Models\Staff;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
@@ -25,5 +26,43 @@ class FrontendController extends Controller
     public function getServiceView()
     {
         return view('frontend.our-services');
+    }
+
+    public function getForStaffView(){
+        return view('frontend.for-staff');
+    }
+
+    public function getForEmployersView()
+    {
+        return view('frontend.for-employers');
+    }
+
+    public function getContactView()
+    {
+        return view('frontend.contact-us');
+    }
+
+    public function SendMessage(Request $request)
+    {
+        $request->validate([
+            'message' => 'required',
+            'name' => 'required',
+            'telephone' => 'required',
+            'subject' => 'required',
+            'email' => 'required|email',
+            
+            
+        ]);
+        $insertCat =  new Contact();
+        $insertCat->name = $request->name;
+        $insertCat->message = $request->message;
+        $insertCat->subject = $request->subject;
+        $insertCat->email = $request->email;
+        $insertCat->telephone = $request->telephone;
+     
+        $insertCat->save();
+
+       
+       return $insertCat ? back()->with('message_success','Message submitted successfully, Thank you !') : back()->with('message_error','Something went wrong, please try again.');
     }
 }
