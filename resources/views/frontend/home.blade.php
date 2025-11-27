@@ -70,7 +70,7 @@
                             <div class="col-lg-10 col-xl-8 col-xxl-7">
                                 <div class="section-content-block text-center">
                                     <span class="section-tag is-white">Reliable, Compliant, Clinically-Led Care Staffing Solutions</span>
-                                    <h2 class="section-title is-text-dark">Explore Our  Services At DIGNIFIED</h2>
+                                    <h2 class="section-title is-text-dark">Explore Our  Services At DHL</h2>
                                     <p class="section-text col-lg-12 mx-auto">At Dignified Health Limited, we provide flexible, high-quality staffing solutions tailored specifically to the health and social care sector.
                                         All our services are overseen by a Registered Mental Health Nurse (RMN) and backed by rigorous compliance, in-house training, and 24/7 support — giving you complete confidence in every placement.
 We offer four core services:
@@ -447,7 +447,7 @@ We offer four core services:
                             <div class="col-md-10 col-lg-8 col-xl-5">
                                 <div class="section-content-block">
                                     <span class="section-tag">HOW IT WORKS</span>
-                                    <h2 class="section-title is-text-dark">Why <br> <strong>Choose</strong> DIGNIFIED
+                                    <h2 class="section-title is-text-dark">Why <br> <strong>Choose</strong> DHL
                                     </h2>
                                     <div class="col-xl-10">
                                         <p class="section-text">Our organisation is guided by clinical expertise and independent ownership, allowing us to operate with integrity, flexibility, and a client-first focus. Clinical leadership ensures our services are safe, evidence-based, and aligned with best practices.</p>
