@@ -161,7 +161,7 @@
                                     
                                         <div class="col-12">
                                             <div class="text-end">
-                                                <button type="submit" class="btn btn-primary">Updaate Staff</button>
+                                                <button type="submit" class="btn btn-primary">Update Staff</button>
                                                 <button type="reset" class="btn btn-secondary">Reset</button>
                                             </div>
                                         </div>
