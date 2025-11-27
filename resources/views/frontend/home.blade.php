@@ -93,7 +93,7 @@ We offer four core services:
                                                     <div class="service-item">
                                                         <div class="service-image-block">
                                                             <a href="our-services" class="service-image-link">
-                                                                <img src="{{asset('frontend/assets/images/istockphoto-523695992-612x612.jpg')}}"
+                                                                <img src="{{asset('frontend/assets/images/view-from-inside-ambulance-uniformed-emergency-services-workers-caring-patient-stretcher-coronavirus-pandemic-1300x867.jpg')}}"
                                                                     alt="service-thumbnail-1" width="364" height="266"
                                                                     class="img-cover service-thumbnail">
                                                             </a>
@@ -132,7 +132,7 @@ We offer four core services:
                                                     <div class="service-item">
                                                         <div class="service-image-block">
                                                             <a href="our-services" class="service-image-link">
-                                                                <img src="{{asset('frontend/assets/images/we-are-hiring.png')}}"
+                                                                <img src="{{asset('frontend/assets/images/premium_photo-1683121855240-5d3f67a5fdec.jpeg')}}"
                                                                     alt="service-thumbnail-1" width="364" height="266"
                                                                     class="img-cover service-thumbnail">
                                                             </a>
@@ -557,7 +557,7 @@ We offer four core services:
                                 <div class="row justify-content-between gy-3">
                                     <div class="col-lg-7">
                                         <div class="section-content-block">
-                                            <span class="section-tag">OUR MEMBER</span>
+                                            <span class="section-tag">OUR CLIENTS</span>
                                             <h2 class="section-title is-text-dark">What Client Say About Us</h2>
                                             <p class="section-text">Our clients are at the heart of everything we do, and their feedback reflects the trust and confidence they place in our services.  </p>
                                         </div>

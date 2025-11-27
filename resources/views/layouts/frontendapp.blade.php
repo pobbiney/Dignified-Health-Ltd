@@ -33,7 +33,7 @@
 
 <body class="page-wrapper" id="page-wrapper">
     <div id="preloader">
-        <h2 class="preloader-text" id="logo-text">DIGNIFIED</h2>
+        <h2 class="preloader-text" id="logo-text">DIGNIFIED HEALTH LTD</h2>
     </div>
 
     <!-- ...::: Section Header Start :::... -->
@@ -177,10 +177,7 @@
                             <!-- Header Menu -->
                             <div class="header-user-event">
                                
-                                <button class="header-user-event-button header-user-event-button-search" type="button"
-                                    data-bs-toggle="offcanvas" data-bs-target="#searchBar" aria-controls="searchBar">
-                                    <i class="fa-light fa-search"></i>
-                                </button>
+                              
                                 <a href="contact-us" class="btn btn-primary d-none d-xl-flex">
                                     Get In Touch
                                     <div class="btn-icon">
@@ -323,7 +320,7 @@
                 <div class="section-space-bottom">
                     <div class="container">
                         <div class="row justify-content-xl-between gy-5">
-                            <div class="col-auto col-md-6 col-lg-5 col-xl-3">
+                            <div class="col-auto col-md-6 col-lg-5 col-xl-2">
                                 <div class="footer-widget footer-widget-about">
                                   
                                         <img src="{{asset('frontend/assets/images/DIGNIFIED HEALTH LTD OFFICIAL LOGO.png')}}" alt="logo-light"  width="150"
@@ -346,7 +343,7 @@
                                     </div> --}}
                                 </div>
                             </div>
-                            <div class="col-auto col-md-6 col-lg-3 col-xl-auto">
+                            <div class="col-auto col-md-6 col-lg-4 col-xl-auto">
                                 <div class="footer-widget footer-widget-nav">
                                     <h4 class="footer-title">Quick Links</h4>
                                     <nav class="footer-nav">
@@ -384,7 +381,7 @@
                                             </div>
                                             <div class="content">
                                                 <span>24/7 Our Support</span>
-                                                <a href="tel:+44 7882 907667" class="text-white">+44 7882 907667</a>
+                                                <a href="tel:+44 7882 907667" class="text-white"  >+44 7882 907667</a>
                                             </div>
                                         </li>
                                         <li>
@@ -394,7 +391,7 @@
                                             <div class="content">
                                                 <span>Send Your Message</span>
                                                 <a href="mailto:info@dignifiedhealthltd.com"
-                                                    class="text-white">info@dignifiedhealthltd.com</a>
+                                                    class="text-white"  >info@dignifiedhealthltd.com</a>
                                             </div>
                                         </li>
                                     </ul>
@@ -408,7 +405,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-auto">
-                            <p class="copyright-text">&copy; 2025 DIGNIFIED HEALTH LTD / All rights
+                            <p class="copyright-text">&copy; 2025 DIGNIFIED HEALTH LTD - Registered in England & Wales: Company No. 9918575 / All rights
                                 reserved / Developed By Speedlines Technology</p>
                         </div>
                     </div>

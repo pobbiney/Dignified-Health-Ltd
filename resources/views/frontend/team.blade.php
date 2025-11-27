@@ -5,7 +5,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-10 col-xl-8 col-xxl-7">
                                 <div class="section-content-block text-center">
-                                    <span class="section-tag is-white">OUR MEMBER</span>
+                                    <span class="section-tag is-white">OUR TEAM</span>
                                     <h2 class="section-title is-text-dark">Explore Our Management Team</h2>
                                     <p class="section-text col-lg-10 mx-auto">Get to know the experienced professionals guiding our organisation. Our management team is made up of industry leaders who bring together years of expertise, hands-on knowledge, and a shared commitment to excellence. Each member plays a vital role in shaping our vision, driving innovation, and ensuring that the highest standards of service are consistently delivered.</p>
                                 </div>
