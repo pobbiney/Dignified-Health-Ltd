@@ -43,7 +43,12 @@
     <!-- apexcharts css-->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/apexcharts/apexcharts.css')}}">
 
-    <!-- slick css -->
+    <!-- slick css -->  <!-- App css-->
+    <link href="{{ asset('assets/css/style.css')}}" rel="stylesheet" type="text/css">
+
+    <!-- Responsive css-->
+    <link href="{{ asset('assets/css/responsive.css')}}" rel="stylesheet" type="text/css">
+
     <link href="{{ asset('assets/vendor/slick/slick.css')}}" rel="stylesheet>
     <link href="{{ asset('assets/vendor/slick/slick-theme.css')}} rel="stylesheet">
 <link rel="preload" as="style" href="{{ asset('build/assets/style-Cuxwy5N_.css')}}" /><link rel="stylesheet" href="{{ asset('build/assets/style-Cuxwy5N_.css')}}" /><!-- css end !-->
