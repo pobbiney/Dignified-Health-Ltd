@@ -23082,7 +23082,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .login-form-container {
-  background-image: url(ce64bf1b93fa44de92e2.jpg);
+    background-image: url('/images/ce64bf1b93fa44de92e2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -29933,7 +29933,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .box-layout {
-  background-image: url(../a80ef3df18d1c6ba3bfb.jpg);
+  background-image: url(a80ef3df18d1c6ba3bfb.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

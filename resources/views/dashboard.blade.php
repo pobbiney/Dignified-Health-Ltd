@@ -46,7 +46,7 @@
                                 </div>
                                  <div class="col-3 col-md-3 col-lg-3">
                                     <div class="card">
-                                    <span class="bg-info h-50 w-50 d-flex-center rounded-circle m-auto eshop-icon-box">
+                                    <span class="bg-primary h-50 w-50 d-flex-center rounded-circle m-auto eshop-icon-box">
                                             <i class="ph  ph-users f-s-24"></i>
                                     </span>
 
@@ -54,16 +54,16 @@
                                         <div class="card-body eshop-cards">
                                             <span class="ripple-effect"></span>
                                             <div class="overflow-hidden">
-                                                <h3 class="text-info mb-0">{{number_format($staffcount)}}</h3>
+                                                <h3 class="text-primary mb-0">{{number_format($staffcount)}}</h3>
                                                 <p class="mg-b-35 f-w-600 text-dark-800 txt-ellipsis-1">Total Staff</p>
-                                                <span class="badge bg-light-info"><a href="{{ route('Staff') }}">View Staff</a></span>
+                                                <span class="badge bg-light-primary"><a href="{{ route('Staff') }}">View Staff</a></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                  <div class="col-3 col-md-3 col-lg-3">
                                     <div class="card">
-                                    <span class="bg-warning h-50 w-50 d-flex-center rounded-circle m-auto eshop-icon-box">
+                                    <span class="bg-danger h-50 w-50 d-flex-center rounded-circle m-auto eshop-icon-box">
                                             <i class="ph  ph-user f-s-24"></i>
                                     </span>
 
@@ -71,9 +71,9 @@
                                         <div class="card-body eshop-cards">
                                             <span class="ripple-effect"></span>
                                             <div class="overflow-hidden">
-                                                <h3 class="text-warning mb-0">{{number_format($testcount)}}</h3>
+                                                <h3 class="text-danger mb-0">{{number_format($testcount)}}</h3>
                                                 <p class="mg-b-35 f-w-600 text-dark-800 txt-ellipsis-1">Total Testimonial</p>
-                                                <span class="badge bg-light-warning"><a href="{{ route('Testimonial') }}">View Testimonial</a></span>
+                                                <span class="badge bg-light-danger"><a href="{{ route('Testimonial') }}">View Testimonial</a></span>
                                             </div>
                                         </div>
                                     </div>
