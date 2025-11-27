@@ -6,45 +6,83 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-7 col-xxl-5 ">
+            <div class="col-md-12 col-xxl-12 ">
                 <div class="card overview-details-box b-s-3-primary ">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-6">
-                                <div class="d-flex gap-3 align-items-center">
-                                                <span class="bg-primary h-60 w-60 d-flex-center flex-column rounded-3">
-                                                    <span class="f-w-500">Mon</span>
-                                                    <span>20</span>
-                                                </span>
+                                <div class="col-3 col-md-3 col-lg-3">
+                                    <div class="card">
+                                    <span class="bg-primary h-50 w-50 d-flex-center rounded-circle m-auto eshop-icon-box">
+                                            <i class="ph  ph-envelope f-s-24"></i>
+                                    </span>
 
-                                    <div>
-                                        <p class="text-dark f-w-600 txt-ellipsis-1">Task Overview </p>
-                                        <div class="chart-card-box d-flex align-items-center">
-                                            <div id="taskOverview"></div>
-                                            <span class="badge bg-primary b-r-50">
-                                                           80
-                                                        </span>
+
+                                        <div class="card-body eshop-cards">
+                                            <span class="ripple-effect"></span>
+                                            <div class="overflow-hidden">
+                                                <h3 class="text-primary mb-0">{{number_format($megcount)}}</h3>
+                                                <p class="mg-b-35 f-w-600 text-dark-800 txt-ellipsis-1">Total Messages</p>
+                                                <span class="badge bg-light-primary"><a href="{{ route('ViewMessages') }}">View Messages</a></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                 <div class="col-3 col-md-3 col-lg-3">
+                                    <div class="card">
+                                    <span class="bg-danger h-50 w-50 d-flex-center rounded-circle m-auto eshop-icon-box">
+                                            <i class="ph  ph-book f-s-24"></i>
+                                    </span>
 
-                            <div class="col-6 mt-3 mt-sm-0">
-                                <div class="d-flex align-items-center gap-1">
-                                    <div class="flex-grow-1">
-                                        <p class="text-dark f-w-500 txt-ellipsis-1">Provided Time</p>
-                                        <h6 class="mb-0 text-primary">6 Day's</h6>
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <p class="text-dark f-w-500 txt-ellipsis-1">Working Time</p>
-                                        <h6 class="mb-0 text-primary">60M</h6>
+
+                                        <div class="card-body eshop-cards">
+                                            <span class="ripple-effect"></span>
+                                            <div class="overflow-hidden">
+                                                <h3 class="text-danger mb-0">{{number_format($rescount)}}</h3>
+                                                <p class="mg-b-35 f-w-600 text-dark-800 txt-ellipsis-1">Total Resources</p>
+                                                <span class="badge bg-light-danger"><a href="{{ route('AddResources') }}">View Resources</a></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                 <div class="col-3 col-md-3 col-lg-3">
+                                    <div class="card">
+                                    <span class="bg-info h-50 w-50 d-flex-center rounded-circle m-auto eshop-icon-box">
+                                            <i class="ph  ph-users f-s-24"></i>
+                                    </span>
+
+
+                                        <div class="card-body eshop-cards">
+                                            <span class="ripple-effect"></span>
+                                            <div class="overflow-hidden">
+                                                <h3 class="text-info mb-0">{{number_format($staffcount)}}</h3>
+                                                <p class="mg-b-35 f-w-600 text-dark-800 txt-ellipsis-1">Total Staff</p>
+                                                <span class="badge bg-light-info"><a href="{{ route('Staff') }}">View Staff</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="col-3 col-md-3 col-lg-3">
+                                    <div class="card">
+                                    <span class="bg-warning h-50 w-50 d-flex-center rounded-circle m-auto eshop-icon-box">
+                                            <i class="ph  ph-user f-s-24"></i>
+                                    </span>
+
+
+                                        <div class="card-body eshop-cards">
+                                            <span class="ripple-effect"></span>
+                                            <div class="overflow-hidden">
+                                                <h3 class="text-warning mb-0">{{number_format($testcount)}}</h3>
+                                                <p class="mg-b-35 f-w-600 text-dark-800 txt-ellipsis-1">Total Testimonial</p>
+                                                <span class="badge bg-light-warning"><a href="{{ route('Testimonial') }}">View Testimonial</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+ 
                         </div>
                     </div>
                 </div>
-                <div class="card overview-details-box b-s-3-success ">
+                {{-- <div class="card overview-details-box b-s-3-success ">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-6">
@@ -117,9 +155,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
-
+{{-- 
             <div class="col-md-5 col-xxl-3">
                 <div class="card overflow-hidden equal-card">
                     <div class="card-body p-0">
@@ -258,7 +296,7 @@
 
                     </div>
                 </div>
-            </div>
+            </div> --}}
  
   
  

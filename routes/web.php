@@ -67,5 +67,16 @@ Route::get('for-staff',[FrontendController::class,'getForStaffView'])->name('for
 Route::get('for-employers',[FrontendController::class,'getForEmployersView'])->name('for-employers');
 Route::get('contact-us',[FrontendController::class,'getContactView'])->name('contact-us');
 Route::post('contact-us-proccess',[FrontendController::class,'SendMessage'])->name('contact-us-proccess');
+Route::get('resources',[FrontendController::class,'getresourcesView'])->name('resources');
+Route::get('AddResources',[BackendController::class,'getResourcesView'])->name('AddResources');
+Route::post('add-resource-process',[BackendController::class,'addResource'])->name('add-resource-process');
+Route::get('edit-resources/{id}',[BackendController::class,'getEditResourceView'])->name('edit-resources');
+Route::post('edit-resource-process/{id}',[BackendController::class,'editResource'])->name('edit-resource-process');
+Route::get('Resources/{id}/delete', [BackendController::class, 'destroyresources']) ;
+Route::get('Links',[BackendController::class,'getLinksView'])->name('Links');
+Route::post('add-links-process',[BackendController::class,'addLinks'])->name('add-links-process');
+Route::get('edit-links/{id}',[BackendController::class,'geteditLinksView'])->name('edit-links');
+Route::post('edit-links-process/{id}',[BackendController::class,'editLinks'])->name('edit-links-process');
+Route::get('Links/{id}/delete', [BackendController::class, 'destroyLinks']) ;
 
 /*End of Website Frontend */

@@ -4,8 +4,10 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Contact;
+use App\Models\Resource;
 use App\Models\Staff;
 use App\Models\Testimonial;
+use App\Models\UserfulLink;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpKernel\Event\ViewEvent;
 
@@ -64,5 +66,20 @@ class FrontendController extends Controller
 
        
        return $insertCat ? back()->with('message_success','Message submitted successfully, Thank you !') : back()->with('message_error','Something went wrong, please try again.');
+    }
+
+    public function getresourcesView()
+    {
+        $listdoc = Resource::orderBy('id','ASC')->get();
+        $listlinkstaff = UserfulLink::where('category','Staff')->get();
+         $listlinkemp = UserfulLink::where('category','Employer')->get();
+        return view('frontend.resources',
+        [
+            'listdoc'=>$listdoc,
+            'listlinkstaff'=>$listlinkstaff,
+            'listlinkemp'=>$listlinkemp
+        ]
+    
+    );
     }
 }

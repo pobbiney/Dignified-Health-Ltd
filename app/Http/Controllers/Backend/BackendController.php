@@ -4,8 +4,10 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Contact;
+use App\Models\Resource;
 use App\Models\Staff;
 use App\Models\Testimonial;
+use App\Models\UserfulLink;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
 use Symfony\Component\Mime\Message;
@@ -202,5 +204,157 @@ class BackendController extends Controller
       $list = Contact::orderBy('id','DESC')->get();
 
       return view('backend.ViewMessages',['list'=>$list]);
+    }
+
+    public function getResourcesView()
+    {
+      $list = Resource::orderBy('id','ASC')->get();
+      return view('backend.Resources' ,['list'=>$list]);
+    }
+
+    public function addLinks(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'link' => 'required',
+            'status' => 'required',
+            'category' => 'required',
+            
+        ]);
+
+        $insertCat =  new UserfulLink();
+
+       
+        
+        $insertCat->name = $request->name;
+        $insertCat->link = $request->link;
+        $insertCat->category = $request->category;
+        $insertCat->status = $request->status;
+         
+     
+        $insertCat->save();
+
+       return $insertCat ? back()->with('message_success','Link added successfully') : back()->with('message_error','Something went wrong, please try again.');
+    }
+
+    public function geteditLinksView($id)
+    {
+       $decodeID = Crypt::decrypt($id);
+        $list = UserfulLink::orderBy('id','ASC')->get();
+        $data = UserfulLink::find($decodeID);
+
+        return view('backend.edit-links',['list'=>$list,'data'=>$data,'id'=>$id]);
+    }
+
+    public function editLinks(Request $request, $id)
+    {
+      $request->validate([
+            'name' => 'required',
+            'link' => 'required',
+            'status' => 'required',
+            'category'=>'required',
+            
+        ]);
+
+          $decodeId = Crypt::decrypt($id);
+         $insertCat =  UserfulLink::find($decodeId);
+
+         
+        
+        $insertCat->name = $request->name;
+         $insertCat->link = $request->link;
+         $insertCat->category = $request->category;
+        $insertCat->status = $request->status;
+         
+     
+        $insertCat->save();
+
+       return $insertCat ? back()->with('message_success','Link updated successfully') : back()->with('message_error','Something went wrong, please try again.');
+    }
+
+    public function destroyLinks($id)
+    {
+        UserfulLink ::where('id',$id)->delete();
+        return redirect('Links')->with('message_success','Link deleted successfully!');
+    }
+
+    public function getLinksView()
+    {
+      $list = UserfulLink::orderBy('id','ASC')->get();
+      return view('backend.Links' ,['list'=>$list]);
+    }
+
+     public function addResource(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'document' => 'required',
+            'status' => 'required',
+            
+        ]);
+
+        $insertCat =  new Resource();
+
+         if($request->hasFile('document')){
+            $file = $request->file('document');
+            $ext = $file->getClientOriginalExtension();
+            $filename =time().'.'.$ext;
+            $file->move('uploads/resources/',$filename);
+            $insertCat->document = 'uploads/resources/'.$filename;
+          }
+        
+        $insertCat->name = $request->name;
+        
+        $insertCat->status = $request->status;
+         
+     
+        $insertCat->save();
+
+       return $insertCat ? back()->with('message_success','Document uploaded successfully') : back()->with('message_error','Something went wrong, please try again.');
+    }
+
+    public function getEditResourceView($id)
+    {
+       $decodeID = Crypt::decrypt($id);
+        $list = Resource::orderBy('id','ASC')->get();
+        $data = Resource::find($decodeID);
+
+        return view('backend.edit-resources',['list'=>$list,'data'=>$data,'id'=>$id]);
+    }
+
+    public function editResource(Request $request, $id)
+    {
+      $request->validate([
+            'name' => 'required',
+            
+            'status' => 'required',
+            
+        ]);
+
+          $decodeId = Crypt::decrypt($id);
+         $insertCat =  Resource::find($decodeId);
+
+         if($request->hasFile('document')){
+            $file = $request->file('document');
+            $ext = $file->getClientOriginalExtension();
+            $filename =time().'.'.$ext;
+            $file->move('uploads/resources/',$filename);
+            $insertCat->document = 'uploads/resources/'.$filename;
+          }
+        
+        $insertCat->name = $request->name;
+        
+        $insertCat->status = $request->status;
+         
+     
+        $insertCat->save();
+
+       return $insertCat ? back()->with('message_success','Document updated successfully') : back()->with('message_error','Something went wrong, please try again.');
+    }
+
+    public function destroyresources($id)
+    {
+        Resource ::where('id',$id)->delete();
+        return redirect('Resources')->with('message_success','Document deleted successfully!');
     }
 }
