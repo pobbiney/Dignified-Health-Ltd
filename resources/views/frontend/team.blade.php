@@ -22,7 +22,7 @@
                                     </a>
                                     <div class="team-member-content-info">
                                         <span class="team-member-designation">{{ $liststaff->position }}</span>
-                                        <a href="team-details.html" class="team-member-name">{{ $liststaff->surname. ' '.$liststaff->firstname }}  </a>
+                                        <a href="{{route('team-profile',Crypt::encrypt($liststaff->staff_id))}}" class="team-member-name">{{ $liststaff->surname. ' '.$liststaff->firstname }}  </a>
                                     </div>
                                     
                                 </div>

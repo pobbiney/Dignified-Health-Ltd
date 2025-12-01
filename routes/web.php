@@ -78,5 +78,6 @@ Route::post('add-links-process',[BackendController::class,'addLinks'])->name('ad
 Route::get('edit-links/{id}',[BackendController::class,'geteditLinksView'])->name('edit-links');
 Route::post('edit-links-process/{id}',[BackendController::class,'editLinks'])->name('edit-links-process');
 Route::get('Links/{id}/delete', [BackendController::class, 'destroyLinks']) ;
+Route::get('team-profile/{id}',[FrontendController::class,'getteamView'])->name('team-profile');
 
 /*End of Website Frontend */

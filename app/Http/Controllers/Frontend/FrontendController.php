@@ -9,6 +9,7 @@ use App\Models\Staff;
 use App\Models\Testimonial;
 use App\Models\UserfulLink;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Crypt;
 use Symfony\Component\HttpKernel\Event\ViewEvent;
 
 class FrontendController extends Controller
@@ -81,5 +82,16 @@ class FrontendController extends Controller
         ]
     
     );
+    }
+
+    public function getteamView($id)
+    {
+        $decodeID = Crypt::decrypt($id);
+        $list = Staff::orderBy('staff_id','ASC')->get();
+        $data = Staff::find($decodeID);
+        return view('frontend.team-profile',
+        ['list'=>$list,'data'=>$data,'id'=>$id]
+    
+     );
     }
 }
